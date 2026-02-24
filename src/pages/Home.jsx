@@ -67,7 +67,13 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="section" style={{ background: 'var(--green-050)' }}>
+      <section
+        className="section"
+        style={{
+          background:
+            'linear-gradient(180deg, #ffffff 0%, var(--green-050) 22%, #ffffff 100%)',
+        }}
+      >
         <div className="container">
           <div className="grid grid--4 stats">
             <div className="stat reveal reveal--scale" style={{ '--reveal-delay': '0ms' }}>
@@ -135,11 +141,17 @@ export default function Home() {
       </section>
 
       {/* Provider network */}
-      <section className="section" style={{ background: 'var(--green-050)' }}>
+      <section
+        className="section"
+        style={{
+          background:
+            'linear-gradient(180deg, #ffffff 0%, var(--green-050) 22%, #ffffff 100%)',
+        }}
+      >
         <div className="container">
           <div className="grid grid--2">
             <div>
-              <h2 className="mb-0">Nationwide provider network</h2>
+              <h2 className="mb-0">Nationwide provider coverage</h2>
               <p>Access care through our accredited hospitals and clinics across Nigeria, including Lagos, Abuja and other states.</p>
               <ul className="checklist">
                 <li>Outpatient and inpatient care</li>
@@ -151,14 +163,20 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-media">
-              <img src="/images/providers-collage.jpg" alt="Collage of accredited hospitals and clinics" />
+              <img src="/images/providers-collage2.png" alt="Collage of accredited hospitals and clinics" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Accreditation note */}
-      <section className="section section--tight" style={{ background: 'var(--green-100)' }}>
+      <section
+        className="section section--tight"
+        style={{
+          background:
+            'linear-gradient(180deg, #ffffff 0%, var(--green-100) 24%, var(--green-050) 72%, #ffffff 100%)',
+        }}
+      >
         <div className="container">
           <div className="grid grid--2" style={{ alignItems: 'center' }}>
             <div>
@@ -173,13 +191,41 @@ export default function Home() {
       </section>
 
       {/* CTA band */}
-      <section className="section text-center">
+      {/* <section className="section text-center">
         <div className="container cta-band reveal reveal--scale">
           <h2 className="mb-0">Ready to find your plan?</h2>
           <p>Get a quote and see benefits tailored to you or your team.</p>
           <NavLink className="btn btn-primary" to="/plans">Get started</NavLink>
         </div>
-      </section>
+      </section> */}
+
+      <section className="section text-center" style={{ position: 'relative', overflow: 'hidden', padding: '100px 0' }}>
+  
+  {/* The Background Blob */}
+  <img 
+    src="/images/blob.png" 
+    alt=""
+    style={{
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)', // Centers it exactly
+      width: '500px',                     // Decreased size (adjust as needed)
+      height: 'auto',
+      zIndex: 0,                          // Puts it behind the text
+      opacity: 0.6,                       // Makes it subtle for readability
+      pointerEvents: 'none'               // User can still click through it
+    }} 
+  />
+
+  {/* The Content */}
+  <div className="container reveal reveal--scale" style={{ position: 'relative', zIndex: 1 }}>
+    <h2 className="mb-0">Ready to find your plan?</h2>
+    <p>Get a quote and see benefits tailored to you or your team.</p>
+    <NavLink className="btn btn-primary" to="/plans">Get started</NavLink>
+  </div>
+
+</section>
     </>
   )
 }

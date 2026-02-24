@@ -332,9 +332,9 @@ body {
 .hero-media {
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: none; /* removed background shadow behind images */
+  box-shadow: none; /* remove any drop shadow */
   background: transparent;
-  border: 1px solid var(--gray-150);
+  border: none; /* remove the faint outline border around image containers */
   animation: float 10s ease-in-out infinite;
   transform-style: preserve-3d;
 }
@@ -346,6 +346,8 @@ body {
   display: block;
   background: transparent;
   will-change: transform;
+  border: none;   /* ensure no borders in these containers */
+  outline: none;
 }
 
 @media (max-width: 900px) {
@@ -732,10 +734,13 @@ textarea:hover {
 
 img {
   border-radius: 0;
-  box-shadow: none; /* ensure no drop shadows on any images */
+  border: none;   /* ensure no borders on images */
+  outline: none;  /* prevent any default outlines on images */
 }
 
 .hero-media img,
 .card img {
-  border-radius: 0
+  border-radius: 0;
+  border: none;   /* ensure no borders in these containers */
+  outline: none;
 }

@@ -31,7 +31,7 @@ export default function Providers() {
         <h1>Accredited Providers</h1>
         <p>Search clinics and hospitals in our network. Contact us to confirm your plan’s access level and provider coverage.</p>
         <div className="hero-media mt-12" style={{ maxWidth: '560px', marginInline: 'auto' }}>
-          <img src="/images/aug.jpg" alt="Collage of accredited hospitals and clinics" loading="lazy" />
+          <img src="/images/aug.png" alt="Collage of accredited hospitals and clinics" loading="lazy" />
 
         </div>
 

@@ -45,7 +45,7 @@ export default function About() {
 
           {/* Mission & Media */}
           <div className="grid grid--2 mt-24" style={{ alignItems: 'center' }}>
-            <div className="hero-media"><img src="/images/team-care.jpg" alt="Our team supporting members" /></div>
+            <div className="hero-media"><img src="/images/team-care.png" alt="Our team supporting members" /></div>
             <div>
               <h3>Our mission</h3>
               <p>To make quality healthcare accessible and affordable through simple plans, great service and a strong provider network.</p>
